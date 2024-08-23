@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mazen</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+              <ul>
+                <li>
+                  <a href="{% url 'trainee_list' %}">List of trainees</a>
+                </li>
+                <li>
+                  <a href="{% url 'create_trainee' %}">Create Trainee</a>
+                </li>
+              </ul>
+            </div>
+        </header>
+
+
+        {% block title %} {% endblock %} {% block content %} {% endblock %}
+    </body>
+</html>
